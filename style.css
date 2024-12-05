@@ -49,7 +49,10 @@ body{
     font-size: 1.1rem;
     color: var(--color-text);
 }
-
+.agregar i{
+    font-size: 45px;
+    color: var(--color-primario);
+}
 .agregar i:hover{
     transform: scale(1.1);
     cursor: pointer;
@@ -77,8 +80,4 @@ body{
 .tachado{
     text-decoration: line-through;
     color: #63b397;
-}
-.agregar i{
-    font-size: 45px;
-    color: var(--color-primario);
 }
