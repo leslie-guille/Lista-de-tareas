@@ -25,7 +25,44 @@
 
 // Definir mis constantes y mis variables
 // ''
-// Código JS
+//comentario
+//variable
+// var=let
+//let nombre; 
+//console.log(nombre);
+//nombre = "Anayeli";
+
+//hola mundo desde la consola
+
+//console.log("Hola Mundo desde la consola");
+//Hola mundo desde un alert
+//alert("Hola mundo desde un alert");
+
+//Tipos de datos:
+
+//string:
+//let texto = "Soy un texto";
+
+//Number:
+//let number = 42;
+
+//Boolean solo consta de dos datos, ejemplo: true or false:
+//let verdadero = true;
+
+//undefined:
+//let undefined;
+
+//Null:
+//let vacio = null;
+
+//let a=10
+//let b=20
+//console.log (a+b)
+
+//' '
+//Comenzamos//
+//Definir mis constantes y mis variables//
+
 const fecha = document.querySelector('#fecha');
 const lista = document.querySelector('#lista');
 const elemento = document.querySelector('#elemento');
@@ -54,15 +91,15 @@ function agregarTarea(tarea, id, hecho, eliminar) {
     const elemento = ` <li id="elemento">
     <i id="${id}" data="hecho" class="bi ${realizado}"></i>
     <p class="tarea-lista text ${LINE}">${tarea}</p>
-    <i id="${id}" data="eliminar" class="bi bi-x"></i>
+    <i id="${id}" data="eliminar" class="bi bi-trash3-fill"></i>
 </li> `
     lista.insertAdjacentHTML("beforeend", elemento);
 };
 
-function tareaRealizada(element) {
-    element.classlist.toggle(check);
-    element.classlist.toggle(uncheck);
-    element.parentNode.querySelector('.text').classlist.toggle(tachado);
+function tareaRealizada (element) {
+    element.classList.toggle(check);
+    element.classList.toggle(uncheck);
+    element.parentNode.querySelector ('.text').classList.toggle (tachado);
     LIST[element.id].realizado = LIST[element.id].realizado ?false :true;
 };
 function tareaEliminada(element) {
